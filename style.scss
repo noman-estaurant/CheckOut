@@ -1,0 +1,165 @@
+        @import 'bar';
+        html {
+            background-color: rgb(255, 123, 159);
+            color: white;
+        }
+        
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            width: 100%;
+            height: 100%;
+            -webkit-user-select: none;
+            overflow-x: hidden;
+            overflow-y: hidden;
+            margin: 0px;
+            padding: 0;
+        }
+        
+        .button,
+        .detail,
+        .container,
+        .modal {
+            position: relative;
+        }
+        
+        .checklist {
+            margin: 0 auto;
+            margin-top: 85px;
+            width: 331px;
+            height: 553px;
+            z-index: 5px;
+            bottom: 0px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 3px 10px rgba(19, 0, 6, 0.78);
+            border-radius: 40px;
+            .list {
+                text-align: left;
+                color: black;
+                position: relative;
+                top: 37px;
+                margin-left: 40px;
+                height: 405px;
+                overflow-y: auto;
+                .title {
+                    line-height: 40px;
+                    margin-top: 30px;
+                    font-weight: 700;
+                    font-size: 17px;
+                }
+                .item {
+                    margin-top: 23px;
+                    height: 34px;
+                    width: 257px;
+                    position: relative;
+                    .name {
+                        position: absolute;
+                        top: 0px;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                    .detail {
+                        position: absolute;
+                        top: 20px;
+                        font-weight: 400;
+                        font-size: 10px;
+                    }
+                    .howmuch {
+                        position: absolute;
+                        left: 224px;
+                        top: 16px;
+                        font-weight: 700;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .checkout {
+                width: 85px;
+                height: 43px;
+                font-size: 17px;
+                border-radius: 21.5px;
+                background: linear-gradient(90deg, rgb(255, 120, 171) 10%, rgb(255, 143, 94)90%);
+                box-shadow: 0px 2px 5px rgba(158, 77, 100, 0.5);
+                text-align: center;
+                line-height: 43px;
+                position: absolute;
+                top: 473px;
+                left: 30px;
+            }
+            .total {
+                font-size: 17px;
+                text-align: right;
+                line-height: 22px;
+                font-weight: 600;
+                color: black;
+                position: absolute;
+                top: 472px;
+                left: 247px;
+                .money {
+                    font-size: 15px;
+                }
+            }
+        }
+        
+        #pay {
+            position: fixed;
+            top: 214px;
+            margin: 0 auto;
+            left: 22px;
+            width: 331px;
+            height: 240px;
+            z-index: 5;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 3px 10px rgba(19, 0, 6, 0.78);
+            border-radius: 40px;
+            .modal {
+                margin: auto;
+                .bycredit img {
+                    width: 84px;
+                    height: 82px;
+                    position: absolute;
+                    top: 62px;
+                    left: 52px;
+                }
+                .byphone img {
+                    width: 67px;
+                    height: 105px;
+                    position: absolute;
+                    top: 39px;
+                    left: 205px;
+                }
+                .cancel-border {
+                    text-align: center;
+                    line-height: 43px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    width: 285px;
+                    height: 43px;
+                    position: absolute;
+                    color: white;
+                    top: 173px;
+                    left: 22px;
+                    border-radius: 21.5px;
+                    background: linear-gradient(90deg, rgb(255, 120, 171) 10%, rgb(255, 143, 94)90%);
+                }
+                .cancel {
+                    z-index: 7;
+                    position: absolute;
+                    text-align: center;
+                    line-height: 43px;
+                    font-size: 14px;
+                    font-weight: 400;
+                    top: 173px;
+                    left: 22px;
+                    color: black;
+                    padding: 0.5px;
+                    width: 282px;
+                    height: 40px;
+                    border-radius: 21.5px;
+                    background: white;
+                }
+            }
+        }
+        
+        .is-blurred {
+            filter: blur(10px);
+        }
