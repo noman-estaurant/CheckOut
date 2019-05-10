@@ -66,9 +66,9 @@ function getDetail(title, item, name, detail, money) {
     var i;
     for (i = 0; i < item; i++) {
         s = s + '<div class="item">'
-        s = s + '   <p class="name">' + name + '+ </p>';
+        s = s + '   <p class="name">' + name + ' </p>';
         s = s + '   <p class="detail">' + detail + '</p>';
-        s = s + '   <p class="howmuch">' + money + '</p>';
+        s = s + '   <p class="howmuch">$ ' + money + '</p>';
         s = s + '</div>';
     }
     return s;
